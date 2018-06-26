@@ -1,0 +1,43 @@
+/*
+Error: The line was indented 2 levels deeper than the previous line.
+        on line 70 of sample.css
+
+65:         background-size: 40px 40px; } }
+66:     @media screen and (min-width: 551px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {
+67:       header .pc_navi_li li.navi_toppage a {
+68:         background-image: url("../images/top/navi_top@2x.png"); } }
+69:   @media (min-width: 551px) {
+70:       header .pc_navi_li li.navi_news a {
+71:         background-repeat: no-repeat;
+72:         display: inline-block;
+73:         line-height: 40px;
+74:         padding-left: 50px;
+75:         background-image: url("../images/top/navi_news.png");
+
+Backtrace:
+sample.css:70
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/engine.rb:523:in `tree'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/engine.rb:527:in `tree'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/engine.rb:412:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.4.1/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.4.1/bin/sass:23:in `load'
+/usr/local/rvm/gems/ruby-2.4.1/bin/sass:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: The line was indented 2 levels deeper than the previous line.\A         on line 70 of sample.css\A \A 65:         background-size: 40px 40px; } }\A 66:     @media screen and (min-width: 551px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {\A 67:       header .pc_navi_li li.navi_toppage a {\A 68:         background-image: url(\"../images/top/navi_top@2x.png\"); } }\A 69:   @media (min-width: 551px) {\A 70:       header .pc_navi_li li.navi_news a {\A 71:         background-repeat: no-repeat;\A 72:         display: inline-block;\A 73:         line-height: 40px;\A 74:         padding-left: 50px;\A 75:         background-image: url(\"../images/top/navi_news.png\");"; }
